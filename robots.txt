@@ -1,0 +1,22 @@
+User-agent: *
+# Allow crawling of the entire site
+Disallow:
+
+# Block specific directories that don't need to be indexed
+Disallow: /assets/templates
+Disallow: /assets/css
+Disallow: /assets/js
+
+
+
+# Block specific files
+Disallow: /pages/
+Disallow: /category/
+Disallow: /README.md
+
+
+# Allow access to essential resources
+
+
+# Sitemap location
+Sitemap: https://motiontill.com/sitemap.xml
