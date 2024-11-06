@@ -66,18 +66,20 @@ class Controll {
 }
 
 const obj = {
+    "nav": {
+        "template": "/assets/templates/nav_01.html"
+    },
     "header": {
         "template": "/assets/templates/header_01.html"
     },
     "aside": {
         "template": "/assets/templates/aside_01.html"
     },
-    "nav": {
-        "template": "/assets/templates/nav_01.html"
-    },
+
     "footer": {
         "template": "/assets/templates/footer_01.html"
-    }
+    },
+
 }
 const pages = {
     "01": {
