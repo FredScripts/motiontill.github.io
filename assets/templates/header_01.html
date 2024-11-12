@@ -59,9 +59,28 @@
             float: none;
         }
     }
+
+    .gotop{
+            display: inline-block;
+            position:fixed;
+            right: 5%;
+            bottom: 5%;
+            background-color: #3c3c3f27;
+            padding: 1rem;
+            filter:drop-shadow(1rem 1rem .7rem rgba(0, 0, 0, 0.336));
+            backdrop-filter:blur(3px);
+            border-radius: .4rem;
+            color: white;
+            transition: all ease-in-out .5s;
+            z-index: 100;
+
+        }
+        .gotop:hover{
+            background-color:#573dea85;
+        }
 </style>
 
-<div class="header ">
+<div id="gotop" class="header ">
     <div class="main-container">
         <a href="/" class="logo">
             <img src="/assets/images/logo.png" alt="">
@@ -72,3 +91,4 @@
         </div>
     </div>
 </div>
+<a class="gotop" href="#gotop">Up ↑</a>

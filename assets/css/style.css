@@ -23,6 +23,7 @@ h1{
     color: #5c5c64;
     box-sizing: border-box;
     direction: ltr;
+    scroll-behavior: smooth;
 }
 p{
     font-size: 1.1rem;
