@@ -27,6 +27,14 @@ class Controll {
         let make_template = this.make_template
 
         $(document).ready(function () {
+            $("body").on("click",".open-it",function(){
+               
+                $("#modal").html( "<img src='" + $($(this).prop('outerHTML')).attr("src") +"' class='center-image' >"  ).show("slow")
+            })
+            $("body").on("click","#modal",function(){
+                $(this).hide("slow")
+            })
+
             let cat = $("#articles").attr("category")
             if (cat != "") {
                 $.ajax({
@@ -121,7 +129,7 @@ const pages = {
         "title": "Export Comps As Project Files",
         "excerept": "export all aftereffects comps to individual projects files ,with one click",
         "url": "/pages/export-comps-as-project-file-ae-file-script",
-        "img-url": "/assets/images/posts/how-to-create-motiontill-liveview-package.png",
+        "img-url": "/assets/images/posts/how-to-export-coomps-as-motiontill-live-view-extension.jpg",
         "tags": "live view,all,tutorials,free-download"
     },
 }
